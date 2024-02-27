@@ -27,12 +27,12 @@ Satellite | Space Agency | Sensor
 
 The matricies consist of the following
 
-bstoreb - the brightness data, confirming that the statellite radiometer is active in that point in time
-bstorelat - the radiometer's latitudinal position
-bstorelon - the radiometer's longitudinal position
-bstoredist - the radiometer's distance from (-70.06,42.36)
-bstoretime - the time of the measurement
-bstoresat - the identifier of the radiometer
-satname - a 1x14 cell translating the numerical identifier in bstoresat to the radiometer name from the above table.
+* bstoreb - the brightness data, confirming that the statellite radiometer is active in that point in time  
+* bstorelat - the radiometer's latitudinal position  
+* bstorelon - the radiometer's longitudinal position  
+* bstoredist - the radiometer's distance from (-70.06,42.36)  
+* bstoretime - the time of the measurement  
+* bstoresat - the identifier of the radiometer  
+* satname - a 1x14 cell translating the numerical identifier in bstoresat to the radiometer name from the above table.  
 
 Within each .mat file, a single line consists of a single satillite's data points in a given point in time; e.g. the position for the satellite entry noted in line 100 of bstoretime is given by line 100 of bstorelat and bstorelon. As each data point consists of a single teperature measurement, a sweep of the area will consist of multiple line entries.
