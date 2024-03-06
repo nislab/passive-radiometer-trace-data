@@ -2,12 +2,9 @@
 Trace data of satellite radiometer data colleted during the month of September 2023 
 ----------------
 
-This repository contains accompanying resources to our work on spectrum sharing between Earth Exploration Satellite radiometers and potential commerical users. The files in the repository represent Level 1 Brightness Temperature Data collected from 
-Earh Exploration Satellite Service radiometers operating near 23.8 GHz, with footprints within 100 km of latitude 42.36 deg, longitude -70.06 deg (i.e. Boston), during the month of September 2023. 
+This repository contains accompanying resources to our work on spectrum sharing between Earth Exploration Satellite radiometers and potential commerical users. The files in the repository represent Level 1 Brightness Temperature Data collected from Earh Exploration Satellite Service radiometers operating near 23.8 GHz, with footprints within 100 km of latitude 42.36 deg, longitude -70.06 deg (i.e. Boston), during the month of September 2023. 
 
-The radiometers represented in these traces are sourced from the below publicly available repositories. The data represented in these traces represents a subset of the available data from the radiometers, and a subset of the radiometers operating on the selected frequency range. 
-These are intended to represent a sample of usage behavior near 23.8 GHz within a selected footprint range. Additional trace data will be added as the team gains access, however we do not claim that the traces represent a definitive record of usage near 23.8 GHz by radiometers 
-within a 100km footprint distance of Boston.
+The radiometers represented in these traces are sourced from the below publicly available repositories. The data represented in these traces represents a subset of the available data from the radiometers, and a subset of the radiometers operating on the selected frequency range. These are intended to represent a sample of usage behavior near 23.8 GHz within a selected footprint range. Additional trace data will be added as the team gains access, however we do not claim that the traces represent a definitive record of usage near 23.8 GHz by radiometers within a 100km footprint distance of Boston.
 
 Satellite | Space Agency | Sensor 
 --- | --- | --- 
@@ -56,8 +53,7 @@ The matricies consist of the following
   13 | 'S3B_traces.mat' | Sentinel-3B
   14 | 'S6_traces.mat' | Sentinel-6A
 
-These matrix files are combined to analyze the trace data. For instance, at 13\:13\:55 on 2023-09-10, the GPM Core Observastory GMI radiometer was observed with a footprint location at (-70.4478, 43.036), a distance of 
-90.2448 km from (-70.06,42.36), and Level 1 Brightness data of 238.2118. This is the 28710th individual data point in the trace data set. Thus, this is reflected in the matricies as follows (assuming long format display for bstoretime)
+These matrix files are combined to analyze the trace data. For instance, at 13\:13\:55 on 2023-09-10, the GPM Core Observastory GMI radiometer was observed with a footprint location at (-70.4478, 43.036), a distance of 90.2448 km from (-70.06,42.36), and Level 1 Brightness data of 238.2118. This is the 28710th individual data point in the trace data set. Thus, this is reflected in the matricies as follows (assuming long format display for bstoretime)
 
 * bstoretb(28710) = 238.2118  
 * bstorelat(28710) = 43.0360  
