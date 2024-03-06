@@ -59,13 +59,13 @@ The matricies consist of the following
 These matrix files are combined to analyze the trace data. For instance, at 13\:13\:55 on 2023-09-10, the GPM Core Observastory GMI radiometer was observed with a footprint location at (-70.4478, 43.036), a distance of 
 90.2448 km from (-70.06,42.36), and Level 1 Brightness data of 238.2118. This is the 28710th individual data point in the trace data set. Thus, this is reflected in the matricies as follows (assuming long format display for bstoretime)
 
-bstoretb(28710) = 238.2118
-bstorelat(28710) = 43.0360
-bstorelon(28710) = -70.4478
-bstoredist(28710) = 90.2448
-bstoretime(28710) = 7.391395513379229e+05
-bstoresat(28710) = 5
-satname(5) = 'GMI_traces.mat'
+* bstoretb(28710) = 238.2118  
+* bstorelat(28710) = 43.0360  
+* bstorelon(28710) = -70.4478  
+* bstoredist(28710) = 90.2448  
+* bstoretime(28710) = 7.391395513379229e+05  
+* bstoresat(28710) = 5  
+* satname(5) = 'GMI_traces.mat'
 
 
 # Liscene
