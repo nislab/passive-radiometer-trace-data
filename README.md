@@ -31,15 +31,42 @@ Satellite | Space Agency | Sensor
 ---------------------
 The matricies consist of the following
 
-* bstoreb - the brightness data, confirming that the statellite radiometer is active in that point in time  
+* bstoretb - the brightness data, confirming that the statellite radiometer is active in that point in time; the units vary depending on the sensor in question  
 * bstorelat - the radiometer footprint latitudinal position  
 * bstorelon - the radiometer footprint longitudinal position  
 * bstoredist - the radiometer footprint distance from (-70.06,42.36)  
 * bstoretime - the time of the measurement, in datenum format (i.e. Number of days since 0000-01-00 in the proploetic ISO 8601 calendar; time of day converted into decimals)  
 * bstoresat - the identifier of the radiometer in satname  
-* satname - a 1x14 cell translating the numerical identifier in bstoresat to the radiometer name from the above table.  
+* satname - a 1x14 cell translating the numerical identifier in bstoresat to the radiometer or sensor name from the above table:
 
-These matrix files are used together to analyze 
+  satname Index | satname Entry | Satellite
+  --- | --- | ---
+  1 | 'AMSR2_traces.mat' | GCOM-W
+  2 | 'AQUA_traces.mat' | Aqua
+  3 | 'ATMS_JPSS1_traces.mat' | JPSS-1 (NOAA 20)
+  4 | 'ATMS_SNPP_traces.mat' | SNPP
+  5 | 'GMI_traces.mat' | GPM Core Observatory
+  6 | 'JPSS2_traces.mat' | JPSS-2 (NOAA 21)
+  7 | 'METOP_B_traces.mat' | Metop-B
+  8 | 'METOP_C_traces.mat' | Metop-C
+  9 | 'N15_traces.mat' | NOAA-15
+  10 | 'NOAA18_traces.mat' | NOAA-18
+  11 | 'NOAA19_traces.mat' | NOAA-19
+  12 | 'S3A_traces.mat' | Sentinel-3A
+  13 | 'S3B_traces.mat' | Sentinel-3B
+  14 | 'S6_traces.mat' | Sentinel-6A
+
+These matrix files are combined to analyze the trace data. For instance, at 13\:13\:55 on 2023-09-10, the GPM Core Observastory GMI radiometer was observed with a footprint location at (-70.4478, 43.036), a distance of 
+90.2448 km from (-70.06,42.36), and Level 1 Brightness data of 238.2118. This is the 28710th individual data point in the trace data set. Thus, this is reflected in the matricies as follows (assuming long format display for bstoretime)
+
+bstoretb(28710) = 238.2118
+bstorelat(28710) = 43.0360
+bstorelon(28710) = -70.4478
+bstoredist(28710) = 90.2448
+bstoretime(28710) = 7.391395513379229e+05
+bstoresat(28710) = 5
+satname(5) = 'GMI_traces.mat'
+
 
 # Liscene
 -----------------
