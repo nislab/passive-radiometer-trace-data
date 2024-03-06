@@ -26,9 +26,9 @@ Satellite | Space Agency | Sensor
 [Sentinel-6A](https://navigator.eumetsat.int/product/EO:EUM:DAT:0146) | EUMETSTAT | AMR-C 
 [SNPP](https://www.ncei.noaa.gov/data/amsu-a-brightness-temperature/access) | NOAA | ATMS 
 
-
-# Data Format
 ---------------------
+# Data Format
+
 The matricies consist of the following
 
 * bstoretb - the brightness data, confirming that the statellite radiometer is active in that point in time; the units vary depending on the sensor in question  
@@ -67,15 +67,15 @@ These matrix files are combined to analyze the trace data. For instance, at 13\:
 * bstoresat(28710) = 5  
 * satname(5) = 'GMI_traces.mat'
 
-
-# Liscene
 -----------------
+# Liscene
+
 
 These materials may be freely used and distributed, provided that attribution to this original source is acknowledged. If you use the data in this repository, we kindly ask that you refer to the following work:
 
 Jonathan Chamberlain, Joel T Johnson, David Starobinski. "Spectrum Sharing between Earth Exploration Satellite and Commercial Services: An Economic Feasibility Analysis". *IEEE International Symposium on Dynamic Spectrum Access Networks (DySPAN) 2024*. Washington, DC, USA. May 2024.  
 
-# References
 -----------------
+# References
 
 If you are using these traces in your work and would like to be featured in this list, kindly create an issue in this repository and provide us with the reference if you would like it to be featured here.
