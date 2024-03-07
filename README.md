@@ -64,7 +64,7 @@ These matrix files are combined to analyze the trace data. For instance, at 13\:
 * satname(5) = 'GMI_traces.mat'
 
 -----------------
-# Liscene
+# License
 
 
 These materials may be freely used and distributed, provided that attribution to this original source is acknowledged. If you use the data in this repository, we kindly ask that you refer to the following work:
