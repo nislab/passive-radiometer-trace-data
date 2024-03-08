@@ -67,7 +67,7 @@ These matrix files are combined to analyze the trace data. For instance, at 13\:
 # License
 
 
-These materials may be freely used and distributed, provided that attribution to this original source is acknowledged. If you use the data in this repository, we kindly ask that you refer to the following work:
+These materials may be freely used and distributed, provided that attribution to this original source is acknowledged. If you use the data in this repository, we kindly ask that you refer to the following work (cf. the included citation.bib file in this repository):
 
 Jonathan Chamberlain, Joel T Johnson, David Starobinski. "Spectrum Sharing between Earth Exploration Satellite and Commercial Services: An Economic Feasibility Analysis". *IEEE International Symposium on Dynamic Spectrum Access Networks (DySPAN) 2024*. Washington, DC, USA. May 2024.  
 
