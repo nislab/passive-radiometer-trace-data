@@ -2,7 +2,7 @@
 Traces of satellite radiometer data collected during the month of September 2023 
 ----------------
 
-This repository contains accompanying resources to our work on spectrum sharing between Earth Exploration Satellite radiometers and potential commerical users. The files in the repository represent Level 1 Brightness Temperature Data collected from Earh Exploration Satellite Service radiometers operating near 23.8 GHz, with footprints within 100 km of latitude 42.36 deg, longitude -70.06 deg (i.e. Boston), during the month of September 2023. 
+This repository contains accompanying resources to our work on spectrum sharing between Earth Exploration Satellite radiometers and potential commercial users. The files in the repository represent Level 1 Brightness Temperature Data collected from Earh Exploration Satellite Service radiometers operating near 23.8 GHz, with footprints within 100 km of latitude 42.36 deg, longitude -70.06 deg (i.e. Boston), during the month of September 2023. 
 
 The radiometers represented in these traces are sourced from the below publicly available repositories. The data represented in these traces represents a subset of the available data from the radiometers, and a subset of the radiometers operating on the selected frequency range. These are intended to represent a sample of usage behavior near 23.8 GHz within a selected footprint range. Additional trace data will be added as the team gains access, however we do not claim that the traces represent a definitive record of usage near 23.8 GHz by radiometers within a 100km footprint distance of Boston.
 
@@ -26,7 +26,7 @@ Satellite | Space Agency | Sensor
 ---------------------
 # Data Format
 
-The matricies consist of the following
+The matrices consist of the following
 
 * bstoretb - the brightness data, confirming that the statellite radiometer is active in that point in time; the units vary depending on the sensor in question  
 * bstorelat - the radiometer footprint latitudinal position  
@@ -74,7 +74,7 @@ Jonathan Chamberlain, Joel T Johnson, David Starobinski. "Spectrum Sharing betwe
 -----------------
 # References
 
-If you are using these traces in your work and would like to be featured in this list, kindly create an issue in this repository and provide us with the reference if you would like it to be featured here.
+If you are using these traces in your work and would like to be featured in this list, kindly create an issue in this repository and provide us with the reference.
 
 -----------------
 # Acknowledgment
