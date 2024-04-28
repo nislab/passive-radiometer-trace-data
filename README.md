@@ -1,5 +1,5 @@
 # passive-radiometer-trace-data
-Trace data of satellite radiometer data colleted during the month of September 2023 
+Traces of satellite radiometer data colleted during the month of September 2023 
 ----------------
 
 This repository contains accompanying resources to our work on spectrum sharing between Earth Exploration Satellite radiometers and potential commerical users. The files in the repository represent Level 1 Brightness Temperature Data collected from Earh Exploration Satellite Service radiometers operating near 23.8 GHz, with footprints within 100 km of latitude 42.36 deg, longitude -70.06 deg (i.e. Boston), during the month of September 2023. 
@@ -75,3 +75,8 @@ Jonathan Chamberlain, Joel T Johnson, David Starobinski. "Spectrum Sharing betwe
 # References
 
 If you are using these traces in your work and would like to be featured in this list, kindly create an issue in this repository and provide us with the reference if you would like it to be featured here.
+
+-----------------
+# Acknowledgment
+
+Support by the US National Science Foundation is gratefully acknoweldged (project ids: AST-2229103 and AST-2229104)
