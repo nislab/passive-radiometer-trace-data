@@ -1,5 +1,5 @@
 # passive-radiometer-trace-data
-Traces of satellite radiometer data colleted during the month of September 2023 
+Traces of satellite radiometer data collected during the month of September 2023 
 ----------------
 
 This repository contains accompanying resources to our work on spectrum sharing between Earth Exploration Satellite radiometers and potential commerical users. The files in the repository represent Level 1 Brightness Temperature Data collected from Earh Exploration Satellite Service radiometers operating near 23.8 GHz, with footprints within 100 km of latitude 42.36 deg, longitude -70.06 deg (i.e. Boston), during the month of September 2023. 
