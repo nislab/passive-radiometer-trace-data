@@ -1,8 +1,8 @@
 # passive-radiometer-trace-data
-Traces of satellite radiometer data collected during the month of September 2023 
+Traces of satellite radiometer data collected during the months of September and October 2023 
 ----------------
 
-This repository contains accompanying resources to our work on spectrum sharing between Earth Exploration Satellite radiometers and potential commercial users. The files in the repository represent Level 1 Brightness Temperature Data collected from Earh Exploration Satellite Service radiometers operating near 23.8 GHz, with footprints within 100 km of latitude 42.36 deg, longitude -70.06 deg (i.e. Boston), during the month of September 2023. 
+This repository contains accompanying resources to our work on spectrum sharing between Earth Exploration Satellite radiometers and potential commercial users. The files in the repository represent Level 1 Brightness Temperature Data collected from Earh Exploration Satellite Service radiometers operating near 23.8 GHz, with footprints within 100 km of latitude 42.36 deg, longitude -70.06 deg (i.e. Boston), during the months of September-October 2023. 
 
 The radiometers represented in these traces are sourced from the below publicly available repositories. The data represented in these traces represents a subset of the available data from the radiometers, and a subset of the radiometers operating on the selected frequency range. These are intended to represent a sample of usage behavior near 23.8 GHz within a selected footprint range. Additional trace data will be added as the team gains access, however we do not claim that the traces represent a definitive record of usage near 23.8 GHz by radiometers within a 100km footprint distance of Boston.
 
@@ -22,6 +22,9 @@ Satellite | Space Agency | Sensor
 [Sentinel-3B](https://documentation.dataspace.copernicus.eu/Data/Sentinel3.html#sentinel-3-sral-level-2) | ESA | MWR 
 [Sentinel-6A](https://navigator.eumetsat.int/product/EO:EUM:DAT:0146) | EUMETSTAT | AMR-C 
 [SNPP](https://www.ncei.noaa.gov/data/amsu-a-brightness-temperature/access) | NOAA | ATMS 
+[SWOT](https://podaac.jpl.nasa.gov/dataset/SWOT_L2_RAD_GDR_2)^1 | NASA | AMR
+
+1: Only included in the two-month trace set
 
 ---------------------
 # Data Format
@@ -34,7 +37,7 @@ The matrices consist of the following
 * bstoredist - the radiometer footprint distance from (-70.06,42.36)  
 * bstoretime - the time of the measurement, in datenum format (i.e. Number of days since 0000-01-00 in the proploetic ISO 8601 calendar; time of day converted into decimals)  
 * bstoresat - the identifier of the radiometer in satname  
-* satname - a 1x14 cell translating the numerical identifier in bstoresat to the radiometer or sensor name from the above table:
+* satname - a 1xN cell translating the numerical identifier in bstoresat to the radiometer or sensor name from the above table:
 
   satname Index | satname Entry | Satellite
   --- | --- | ---
@@ -52,6 +55,8 @@ The matrices consist of the following
   12 | 'S3A_traces.mat' | Sentinel-3A
   13 | 'S3B_traces.mat' | Sentinel-3B
   14 | 'S6_traces.mat' | Sentinel-6A
+  15 | 'SNPP_traces.mat' | SNPP
+  16 | 'SWOT_traces.mat' | SWOT
 
 These matrix files are combined to analyze the trace data. For instance, at 13\:13\:55 on 2023-09-10, the GPM Core Observastory GMI radiometer was observed with a footprint location at (-70.4478, 43.036), a distance of 90.2448 km from (-70.06,42.36), and Level 1 Brightness data of 238.2118. This is the 28710th individual data point in the trace data set. Thus, this is reflected in the matricies as follows (assuming long format display for bstoretime)
 
@@ -62,6 +67,8 @@ These matrix files are combined to analyze the trace data. For instance, at 13\:
 * bstoretime(28710) = 7.391395513379229e+05  
 * bstoresat(28710) = 5  
 * satname(5) = 'GMI_traces.mat'
+
+The repository consists of two collections of data. The first, the single-month-traces, consist solely of traces data corresponding to the month of September 2023 and was used as the basis for the analysis of the radiometer characterization in the DySpan work below. The two-month-traces represents our first major update to the collection for analysis and data processing in future works.
 
 -----------------
 # License
