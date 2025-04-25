@@ -10,8 +10,8 @@ The first, the single-month-traces, consist solely of traces data corresponding 
 
 The second, the two-month-traces represents our first major update to the collection for analysis and data processing, consisting of footprint data collected near the following locations during the months of September-October 2023:
 
-Location | Identifier | Latitude | Longitude
---- | --- | --- 
+Location | Identifier | Latitude | Longitude 
+--- | --- | --- | ---
 Barcelona, Spain | BAR | 41.38 | 2.17
 Boston MA, United States | BOS | 42.36 | -71.06
 Cheyenne WY, United States | WYO | 41.14  | -104.82
