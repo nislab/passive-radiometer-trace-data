@@ -1,6 +1,6 @@
 # passive-radiometer-trace-data
-Traces of satellite radiometer data collected during the months of September and October 2023 
-----------------
+Traces of satellite radiometer data collected during the months of September and October 2023
+
 
 This repository contains accompanying resources to our joint work with the Ohio State [ElectroScience Laboratory](https://electroscience.osu.edu/) on spectrum sharing between Earth Exploration Satellite radiometers and potential commercial users. The files in the repository represent Level 1 Brightness Temperature Data collected from Earh Exploration Satellite Service radiometers operating near 23.8 GHz, with footprints within 100 km of selected locations. 
 
